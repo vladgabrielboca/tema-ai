@@ -1,79 +1,68 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" data-theme="light"> <!-- Tema implicită este light -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliu Personal - Vlad</title>
+    <title>Portofoliu Modern - Vlad</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Adăugarea fonturilor de la Google Fonts -->
+    <!-- Fonturi Premium de la Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">Vlad</div>
+            <a href="#" class="logo">Vlad</a>
             <ul>
-                <li><a href="#hero">Acasă</a></li>
                 <li><a href="#about">Despre</a></li>
                 <li><a href="#projects">Proiecte</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" title="Schimbă tema">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
         </nav>
     </header>
 
     <main>
-        <!-- Secțiunea Hero: Introducerea principală -->
         <section id="hero">
-            <div class="hero-content">
-                <h1>Salut, sunt Vlad</h1>
-                <p class="subtitle">Student la Informatica Economica</p>
-            </div>
-            <div class="hero-image">
-                <!-- IMPORTANT: Înlocuiește 'poza-profil.jpg' cu numele pozei tale -->
-                <img src="./cat.jpg" alt="O alta poza de profil cu mine" />
+            <div class="hero-content animate-on-scroll">
+                <h1>Vlad Gabriel Boca</h1>
+                <p class="subtitle">Student pasionat de dezvoltare software și explorarea noilor tehnologii.</p>
+                <a href="#projects" class="cta-button">Vezi Proiectele</a>
             </div>
         </section>
 
-        <!-- Secțiunea Despre: Mai multe detalii personale -->
-        <section id="about">
+        <section id="about" class="animate-on-scroll">
             <h2>Despre Mine</h2>
-            <p>
-                Sunt un student pasionat de tehnologie, de partea hardware dar si de partea software. Imi place sa invat lucruri noi si sa explorez diverse domenii ale informaticii.
-            </p>
+            <p>Sunt un student la Informatică Economică, fascinat de modul în care tehnologia modelează lumea. Îmi place să construiesc soluții software practice și să învăț continuu, de la dezvoltare web la automatizări și hardware.</p>
         </section>
 
-        <!-- Secțiunea Proiecte: Portofoliu de lucrări -->
-        <section id="projects">
+        <section id="projects" class="animate-on-scroll">
             <h2>Proiectele Mele</h2>
             <div class="projects-container">
-                <!-- Proiectul 1 -->
                 <div class="project-card">
                     <h3>Instagram Downloader</h3>
-                    <p>Permite descarcarea de story-uri, imaginilor de pe un profil public folosindu-se de Selenium</p>
-                    <a href="#" class="project-link">Vezi Proiectul</a>
+                    <p>O unealtă de automatizare construită cu Selenium care permite descărcarea conținutului de pe profiluri publice de Instagram.</p>
+                    <a href="#" class="project-link">Vezi pe GitHub</a>
                 </div>
-                <!-- Proiectul 2 -->
                 <div class="project-card">
-                    <!-- <img src="https://via.placeholder.com/400x250" alt="Imagine placeholder pentru proiectul 2"> -->
-                    <h3>Work in progress</h3>
-                    <p>Work in progress.</p>
-                    <a href="#" class="project-link">Vezi Proiectul</a>
+                    <h3>Work in Progress 2</h3>
+                    <p>Descrierea viitorului proiect va apărea aici. Momentan, explorez noi idei și tehnologii.</p>
+                    <a href="#" class="project-link">Indisponibil</a>
                 </div>
-                <!-- Proiectul 3 -->
                 <div class="project-card">
-                    <!-- <img src="https://via.placeholder.com/400x250" alt="Imagine placeholder pentru proiectul 3"> -->
-                    <h3>Work in progress.</h3>
-                    <p>Work in progress.</p>
-                    <a href="#" class="project-link">Vezi Proiectul</a>
+                    <h3>Work in Progress 3</h3>
+                    <p>Descrierea viitorului proiect va apărea aici. Momentan, explorez noi idei și tehnologii.</p>
+                    <a href="#" class="project-link">Indisponibil</a>
                 </div>
             </div>
         </section>
 
-        <!-- Secțiunea Contact: Informații de contact -->
-        <section id="contact">
+        <section id="contact" class="animate-on-scroll">
             <h2>Contactează-mă</h2>
             <p>Dacă vrei să colaborăm sau ai o întrebare, nu ezita să îmi scrii.</p>
             <div class="contact-links">
@@ -84,8 +73,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Vlad. Toate drepturile rezervate.</p>
+        <p>&copy; 2025 Vlad Gabriel Boca. Construit cu pasiune.</p>
     </footer>
-</body>
 
+    <!-- Conectarea fișierului JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
